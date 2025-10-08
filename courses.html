@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Courses — UniSoft Academy</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="UniSoft Academy home" style="margin-left:2px;">
+          <img src="assets/img/Logo.png" alt="UniSoft logo" style="width:85px;height:85px;border-radius:10px;object-fit:contain;box-shadow: var(--shadow-sm);">
+          <span class="name">UniSoft Academy</span>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="sr-only" aria-label="Toggle navigation">
+        <label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span></label>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="courses.html" class="active">Courses</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="signup.html" class="button cta" id="nav-cta">Sign up</a>
+          <a href="login.html" class="button" id="nav-login">Sign in</a>
+          <button class="button" id="nav-logout" style="display:none;">Logout</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" style="padding-top: 72px;">
+        <div class="container">
+          <div class="eyebrow mb-2">Catalog</div>
+          <h1 class="mb-3">All Courses</h1>
+          <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+            <article class="card padded">
+              <h3 class="mb-2">HTML & CSS Foundations</h3>
+              <ul class="list-compact muted">
+                <li>Responsive layout, components</li>
+                <li>CSS Grid & Flexbox</li>
+              </ul>
+              <div class="mt-3"><a class="button" href="course.html">View Course</a></div>
+            </article>
+            <article class="card padded">
+              <h3 class="mb-2">JavaScript Essentials</h3>
+              <ul class="list-compact muted">
+                <li>Syntax, DOM, fetch</li>
+                <li>ES modules</li>
+              </ul>
+              <div class="mt-3"><a class="button" href="course.html">View Course</a></div>
+            </article>
+            <article class="card padded">
+              <h3 class="mb-2">Python for Beginners</h3>
+              <ul class="list-compact muted">
+                <li>Syntax, data types</li>
+                <li>Scripts & basics</li>
+              </ul>
+              <div class="mt-3"><a class="button" href="course.html">View Course</a></div>
+            </article>
+            <article class="card padded">
+              <h3 class="mb-2">Full‑Stack Path</h3>
+              <ul class="list-compact muted">
+                <li>Front‑end + Back‑end</li>
+                <li>Projects & deployment</li>
+              </ul>
+              <div class="mt-3"><a class="button" href="course.html">View Course</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="meta">
+          <span>© <span id="year"></span> UniSoft Academy</span>
+        </div>
+      </div>
+      <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
+      <script src="assets/js/auth.js"></script>
+    </footer>
+  </body>
+  </html>
+

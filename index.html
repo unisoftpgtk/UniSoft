@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UniSoft Academy — Learn Programming Online</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="UniSoft Academy home" style="margin-left:9px;">
+          <img src="assets/img/Logo.png" alt="UniSoft logo" style="width:85px;height:85px;border-radius:10px;object-fit:contain;box-shadow: var(--shadow-sm);">
+          <span class="name">UniSoft Academy</span>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="sr-only" aria-label="Toggle navigation">
+        <label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span></label>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="signup.html" class="button cta" id="nav-cta">Sign up</a>
+          <a href="login.html" class="button" id="nav-login">Sign in</a>
+          <button class="button" id="nav-logout" style="display:none;">Logout</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="section" style="padding-top: 72px;">
+        <div class="container">
+          <div class="card padded" style="background: linear-gradient(135deg, rgba(124,92,255,0.18), rgba(6,214,160,0.12)); border-color: rgba(124,92,255,0.35);">
+            <h1 class="mb-3" style="margin-top: 6px;">Learn to code with structured programs</h1>
+            <p class="lead mb-4">Beginner‑friendly paths and practical courses to launch or advance your tech career.</p>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <a class="button primary" href="courses.html">Browse Courses</a>
+              <a class="button" href="about.html">About Our Programs</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Program Categories (simplified) -->
+      <section class="section">
+        <div class="container">
+          <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+            <article class="card padded">
+              <h3 class="mb-2">Software Engineering</h3>
+              <p class="muted">Full programming path from fundamentals to advanced development.</p>
+              <div class="mt-3"><a class="button" href="courses.html">View Track</a></div>
+            </article>
+            <article class="card padded">
+              <h3 class="mb-2">QA Engineering</h3>
+              <p class="muted">Learn testing fundamentals, automation, and tooling for quality software.</p>
+              <div class="mt-3"><a class="button" href="courses.html">View Track</a></div>
+            </article>
+            <article class="card padded">
+              <h3 class="mb-2">Upskill Programs</h3>
+              <p class="muted">Short, focused courses to deepen skills in modern technologies.</p>
+              <div class="mt-3"><a class="button" href="courses.html">Explore Upskill</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Upcoming (simplified list) -->
+      <section class="section">
+        <div class="container">
+          <div class="card padded">
+            <h2 class="mb-3">Upcoming Courses</h2>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+              <div class="card padded">
+                <h4 class="mb-2">Programming Basics (Python)</h4>
+                <p class="muted">October 2025</p>
+              </div>
+              <div class="card padded">
+                <h4 class="mb-2">Programming Basics (JavaScript)</h4>
+                <p class="muted">October 2025</p>
+              </div>
+              <div class="card padded">
+                <h4 class="mb-2">ReactJS</h4>
+                <p class="muted">October 2025</p>
+              </div>
+              <div class="card padded">
+                <h4 class="mb-2">HTML & CSS</h4>
+                <p class="muted">January 2026</p>
+              </div>
+            </div>
+            <div class="mt-4"><a class="button" href="courses.html">See all courses</a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+          <div>
+            <div class="brand mb-3"><img src="assets/img/Logo.png" alt="UniSoft logo" style="width:40px;height:40px;border-radius:10px;object-fit:contain;box-shadow: var(--shadow-sm);"><span class="name">UniSoft Academy</span></div>
+            <p class="muted">Modern programming education, from zero to job‑ready.</p>
+          </div>
+          <div>
+            <h4 class="mb-2">Explore</h4>
+            <p class="muted"><a href="courses.html">All Courses</a></p>
+            <p class="muted"><a href="about.html">About</a></p>
+            <p class="muted"><a href="contact.html">Contact</a></p>
+          </div>
+          <div>
+            <h4 class="mb-2">Get Started</h4>
+            <p class="muted">Pick a path and start learning today.</p>
+            <a class="button primary mt-2" href="courses.html">Start Now</a>
+          </div>
+        </div>
+        <div class="meta">
+          <span>© <span id="year"></span> UniSoft Academy</span>
+        </div>
+      </div>
+      <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
+      <script src="assets/js/auth.js"></script>
+    </footer>
+  </body>
+  </html>
+

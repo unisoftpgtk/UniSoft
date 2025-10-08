@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact — UniSoft Academy</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="UniSoft Academy home" style="margin-left:2px;">
+          <img src="assets/img/Logo.png" alt="UniSoft logo" style="width:85px;height:85px;border-radius:10px;object-fit:contain;box-shadow: var(--shadow-sm);">
+          <span class="name">UniSoft Academy</span>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="sr-only" aria-label="Toggle navigation">
+        <label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span></label>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="active">Contact</a>
+          <a href="signup.html" class="button cta" id="nav-cta">Sign up</a>
+          <a href="login.html" class="button" id="nav-login">Sign in</a>
+          <button class="button" id="nav-logout" style="display:none;">Logout</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" style="padding-top: 72px;">
+        <div class="container">
+          <h1 class="mb-3">Contact Us</h1>
+          <form class="card padded mt-4" action="#" method="post" onsubmit="return false;">
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+              <label>
+                <span class="muted">Name</span>
+                <input style="margin-top:6px;width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--color-border);background:var(--color-surface);color:var(--color-text);" type="text" placeholder="Jane Doe" required>
+              </label>
+              <label>
+                <span class="muted">Email</span>
+                <input style="margin-top:6px;width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--color-border);background:var(--color-surface);color:var(--color-text);" type="email" placeholder="jane@example.com" required>
+              </label>
+            </div>
+            <label class="mt-4" style="display:block;">
+              <span class="muted">Message</span>
+              <textarea style="margin-top:6px;width:100%;min-height:140px;padding:12px 14px;border-radius:10px;border:1px solid var(--color-border);background:var(--color-surface);color:var(--color-text);"></textarea>
+            </label>
+            <div class="mt-4">
+              <button class="button primary" type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="meta">
+          <span>© <span id="year"></span> UniSoft Academy</span>
+        </div>
+      </div>
+      <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
+      <script src="assets/js/auth.js"></script>
+    </footer>
+  </body>
+  </html>
+

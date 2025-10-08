@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About — UniSoft Academy</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="UniSoft Academy home" style="margin-left:2px;">
+          <img src="assets/img/Logo.png" alt="UniSoft logo" style="width:85px;height:85px;border-radius:10px;object-fit:contain;box-shadow: var(--shadow-sm);">
+          <span class="name">UniSoft Academy</span>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="sr-only" aria-label="Toggle navigation">
+        <label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span></label>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="about.html" class="active">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="signup.html" class="button cta" id="nav-cta">Sign up</a>
+          <a href="login.html" class="button" id="nav-login">Sign in</a>
+          <button class="button" id="nav-logout" style="display:none;">Logout</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" style="padding-top: 72px;">
+        <div class="container">
+          <div class="eyebrow mb-2">Who we are</div>
+          <h1 class="mb-3">About UniSoft Academy</h1>
+          <div class="grid mt-4" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+            <div class="card padded">
+              <h3 class="mb-2">Our Mission</h3>
+              <ul class="list-compact muted">
+                <li>Affordable, world‑class programming education</li>
+                <li>Accessible to all learners</li>
+              </ul>
+            </div>
+            <div class="card padded">
+              <h3 class="mb-2">Our Approach</h3>
+              <ul class="list-compact muted">
+                <li>Project‑based learning</li>
+                <li>Guided paths & feedback</li>
+              </ul>
+            </div>
+            <div class="card padded">
+              <h3 class="mb-2">Our Values</h3>
+              <ul class="list-compact muted">
+                <li>Clarity & inclusivity</li>
+                <li>Continuous improvement</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="meta">
+          <span>© <span id="year"></span> UniSoft Academy</span>
+        </div>
+      </div>
+      <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
+      <script src="assets/js/auth.js"></script>
+    </footer>
+  </body>
+  </html>
+

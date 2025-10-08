@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Course Detail — UniSoft Academy</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="UniSoft Academy home" style="margin-left:2px;">
+          <img src="assets/img/Logo.png" alt="UniSoft logo" style="width:85px;height:85px;border-radius:10px;object-fit:contain;box-shadow: var(--shadow-sm);">
+          <span class="name">UniSoft Academy</span>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="sr-only" aria-label="Toggle navigation">
+        <label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span></label>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="courses.html" class="button cta">Get Started</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" style="padding-top: 72px;">
+        <div class="container">
+          <div class="eyebrow mb-2">Course</div>
+          <div class="grid" style="grid-template-columns: 1.2fr .8fr; gap: 24px;">
+            <div>
+              <h1 class="mb-3">HTML & CSS Foundations</h1>
+              <p class="lead mb-4">Learn the building blocks of the web with modern layout techniques, responsive design, and component‑based thinking.</p>
+              <div class="card padded">
+                <h3 class="mb-3">Syllabus</h3>
+                <ol class="list-compact" style="padding-left: 18px;">
+                  <li class="mb-2">Getting Started: HTML structure & semantics</li>
+                  <li class="mb-2">CSS Fundamentals: cascade, selectors, specificity</li>
+                  <li class="mb-2">Layout: Flexbox and Grid</li>
+                  <li class="mb-2">Responsive Design: breakpoints, fluid type, images</li>
+                  <li class="mb-2">Components: cards, navbars, forms</li>
+                  <li>Capstone Project: responsive landing page</li>
+                </ol>
+              </div>
+            </div>
+            <aside>
+              <div class="card padded">
+                <h3 class="mb-2">Course Info</h3>
+                <p class="muted">Level: Beginner • Duration: 6 weeks</p>
+                <div class="mt-3"><a class="button primary" href="contact.html">Enroll (Demo)</a></div>
+              </div>
+              <div class="card padded mt-4">
+                <h4 class="mb-2">Prerequisites</h4>
+                <p class="muted">None. A computer and curiosity.</p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="meta">
+          <span>© <span id="year"></span> UniSoft Academy</span>
+        </div>
+      </div>
+      <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
+  </html>
+
