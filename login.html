@@ -59,25 +59,7 @@
           <span>© <span id="year"></span> UniSoft Academy</span>
         </div>
       </div>
-      <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-      </script>
-      <script>
-        (function(){
-          const form = document.getElementById('login-form');
-          form.addEventListener('submit', function(e){
-            e.preventDefault();
-            const email = document.getElementById('email');
-            const password = document.getElementById('password');
-            const emailError = document.getElementById('email-error');
-            const passwordError = document.getElementById('password-error');
-
-            emailError.style.display = email.validity.valid ? 'none' : 'block';
-            passwordError.style.display = password.value.length >= 6 ? 'none' : 'block';
-            if (!email.validity.valid || password.value.length < 6) return;
-          });
-        })();
-      </script>
+      
     </footer>
   </body>
   </html>
