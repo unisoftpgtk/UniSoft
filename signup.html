@@ -22,7 +22,6 @@
           <a href="contact.html">Contact</a>
           <a href="signup.html" class="button cta" id="nav-cta">Sign up</a>
           <a href="login.html" class="button" id="nav-login">Sign in</a>
-          <button class="button" id="nav-logout" style="display:none;">Logout</button>
         </nav>
       </div>
     </header>
@@ -73,7 +72,6 @@
       <script>
         document.getElementById('year').textContent = new Date().getFullYear();
       </script>
-      <script src="assets/js/auth.js"></script>
       <script>
         (function(){
           const form = document.getElementById('signup-form');
@@ -94,8 +92,6 @@
             confirmError.style.display = confirm.value === password.value && confirm.value.length >= 6 ? 'none' : 'block';
 
             if (!username.value.trim() || !email.validity.valid || password.value.length < 6 || confirm.value !== password.value) return;
-
-            window.fakeAuthSignup({ username: username.value, email: email.value });
           });
         })();
       </script>
